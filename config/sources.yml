@@ -1,0 +1,80 @@
+# ─── Defense & Geopolitics News Sources ─────────────────────────────────────
+# tier: 1 = Major international wire / broadcaster (highest trust)
+# tier: 2 = National newspaper / credible regional outlet
+# tier: 3 = Niche blog, opinion site, or unverified outlet
+
+sources:
+  # ── Tier 1 – International wire services & broadcasters ──────────────────
+  - name: Reuters
+    url: https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best
+    type: rss
+    country: International
+    tier: 1
+
+  - name: AP News
+    url: https://rsshub.app/apnews/topics/apf-topnews
+    type: rss
+    country: International
+    tier: 1
+
+  - name: BBC World
+    url: https://feeds.bbci.co.uk/news/world/rss.xml
+    type: rss
+    country: UK
+    tier: 1
+
+  - name: Al Jazeera
+    url: https://www.aljazeera.com/xml/rss/all.xml
+    type: rss
+    country: Qatar
+    tier: 1
+
+  # ── Tier 2 – National / credible regional outlets ────────────────────────
+  - name: The Hindu
+    url: https://www.thehindu.com/news/national/feeder/default.rss
+    type: rss
+    country: India
+    tier: 2
+
+  - name: Indian Express
+    url: https://indianexpress.com/section/india/feed/
+    type: rss
+    country: India
+    tier: 2
+
+  - name: NDTV
+    url: https://feeds.feedburner.com/ndtvnews-top-stories
+    type: rss
+    country: India
+    tier: 2
+
+  - name: Times of India
+    url: https://timesofindia.indiatimes.com/rssfeedstopstories.cms
+    type: rss
+    country: India
+    tier: 2
+
+  - name: South China Morning Post
+    url: https://www.scmp.com/rss/91/feed
+    type: rss
+    country: Hong Kong
+    tier: 2
+
+  # ── Tier 3 – Niche / opinion / blogs ─────────────────────────────────────
+  - name: War on the Rocks
+    url: https://warontherocks.com/feed/
+    type: rss
+    country: US
+    tier: 3
+
+  - name: The Diplomat
+    url: https://thediplomat.com/feed/
+    type: rss
+    country: US
+    tier: 3
+
+  - name: Defense One
+    url: https://www.defenseone.com/rss/all/
+    type: rss
+    country: US
+    tier: 3

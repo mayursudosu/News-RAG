@@ -1,0 +1,291 @@
+# ─── Relevance Filtering Keywords ───────────────────────────────────────────
+# positive: keywords that indicate defense / geopolitics / strategic relevance
+# negative: keywords that indicate noise (entertainment, sports, lifestyle)
+#
+# Scoring:  +1 per positive hit  ·  -1 per negative hit  ·  small tier bonus
+# Articles below min_score are dropped.
+
+min_score: 1
+
+# Topic categories used for user-controlled selection in CLI.
+# Exactly one category is assigned per article based on strongest keyword hits.
+topic_keywords:
+  defense:
+    - missile
+    - drone
+    - strike
+    - airstrike
+    - bombing
+    - artillery
+    - warship
+    - submarine
+    - fighter jet
+    - military
+    - defense
+    - defence
+    - army
+    - navy
+    - air force
+    - troops
+    - soldiers
+    - weapons
+    - ammunition
+    - radar
+    - surveillance
+    - intelligence
+
+  economy:
+    - economy
+    - economic
+    - inflation
+    - gdp
+    - growth
+    - trade
+    - tariff
+    - sanctions
+    - embargo
+    - supply chain
+    - critical minerals
+    - rare earth
+    - crude oil
+    - oil price
+
+  technology:
+    - cybersecurity
+    - cyber attack
+    - semiconductor
+    - ai
+    - artificial intelligence
+    - satellite
+    - isro
+    - drdo
+    - espionage
+
+  diplomacy:
+    - diplomacy
+    - diplomatic
+    - treaty
+    - alliance
+    - bilateral
+    - multilateral
+    - summit
+    - foreign policy
+    - ambassador
+    - envoy
+    - sovereignty
+    - territorial dispute
+
+  science:
+    - nuclear
+    - reactor
+    - space
+    - launch
+    - satellite
+    - climate
+    - arctic
+
+  energy:
+    - oil
+    - gas
+    - lng
+    - strait of hormuz
+    - energy security
+    - refinery
+    - crude
+    - pipeline
+
+  global_policy:
+    - geopolitics
+    - nato
+    - quad
+    - brics
+    - sco
+    - middle east
+    - indo-pacific
+    - south china sea
+    - global order
+    - sanctions
+
+positive:
+  # Military / defense
+  - missile
+  - drone
+  - strike
+  - airstrike
+  - bombing
+  - artillery
+  - warship
+  - submarine
+  - fighter jet
+  - stealth
+  - nuclear
+  - warhead
+  - military
+  - defense
+  - defence
+  - army
+  - navy
+  - air force
+  - troops
+  - soldiers
+  - battalion
+  - regiment
+  - pentagon
+  - nato
+  - sanctions
+  - ceasefire
+  - war
+  - conflict
+  - invasion
+  - occupation
+  - counteroffensive
+  - weapons
+  - arms deal
+  - ammunition
+  - radar
+  - surveillance
+  - intelligence
+  - espionage
+  - cyber attack
+  - cybersecurity
+
+  # Geopolitics / diplomacy
+  - geopolitics
+  - diplomacy
+  - diplomatic
+  - treaty
+  - alliance
+  - bilateral
+  - multilateral
+  - summit
+  - foreign policy
+  - ambassador
+  - envoy
+  - sanctions
+  - embargo
+  - territorial dispute
+  - sovereignty
+  - border
+  - annexation
+  - referendum
+
+  # India-specific / UPSC relevance
+  - india
+  - indian
+  - drdo
+  - isro
+  - brahmos
+  - tejas
+  - rafale
+  - agni
+  - pinaka
+  - lac
+  - line of actual control
+  - line of control
+  - kashmir
+  - ladakh
+  - arunachal
+  - siachen
+  - galwan
+  - quad
+  - indo-pacific
+  - brics
+  - sco
+  - neighbourhood first
+  - act east
+  - look east
+  - upsc
+
+  # Strategic regions / actors
+  - iran
+  - israel
+  - china
+  - pakistan
+  - russia
+  - ukraine
+  - taiwan
+  - north korea
+  - south china sea
+  - strait of hormuz
+  - arctic
+  - middle east
+  - gulf
+  - hezbollah
+  - hamas
+  - taliban
+  - isis
+
+  # Economic-strategic
+  - oil price
+  - crude oil
+  - energy security
+  - supply chain
+  - critical minerals
+  - semiconductor
+  - rare earth
+
+negative:
+  # Entertainment
+  - bollywood
+  - hollywood
+  - box office
+  - celebrity
+  - red carpet
+  - movie review
+  - album release
+  - tv show
+  - reality show
+  - netflix
+  - streaming
+
+  # Sports (non-strategic)
+  - cricket
+  - ipl
+  - football
+  - soccer
+  - tennis
+  - basketball
+  - nba
+  - nfl
+  - nhl
+  - premier league
+  - world cup
+  - t20
+  - odi
+  - test match
+  - semifinal
+  - batting
+  - bowling
+  - wicket
+  - goalkeeper
+  - touchdown
+
+  # Lifestyle / tabloid
+  - recipe
+  - horoscope
+  - fashion
+  - skincare
+  - wedding
+  - honeymoon
+  - birthday
+  - festive
+  - holi
+  - diwali
+  - christmas sale
+  - shopping
+  - discount
+  - coupon
+  - weight loss
+  - diet plan
+  - yoga
+  - meditation
+
+  # Tech consumer
+  - iphone
+  - samsung galaxy
+  - pixel
+  - laptop review
+  - gadget
+  - unboxing
+  - app store
+  - play store
