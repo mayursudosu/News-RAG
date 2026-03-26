@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: newsrag
+Version: 0.1.0
+Summary: Defense News RAG – daily intelligence brief generator
+Requires-Python: >=3.10
+Requires-Dist: feedparser>=6.0
+Requires-Dist: requests>=2.31
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: beautifulsoup4>=4.12
+Requires-Dist: lxml>=5.0
+Requires-Dist: streamlit>=1.30
+Provides-Extra: extract
+Requires-Dist: newspaper4k>=0.9; extra == "extract"
+Provides-Extra: llm
+Requires-Dist: llama-cpp-python>=0.2; extra == "llm"
+Requires-Dist: sentence-transformers>=2.2; extra == "llm"

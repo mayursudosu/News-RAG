@@ -1,0 +1,13 @@
+feedparser>=6.0
+requests>=2.31
+pyyaml>=6.0
+beautifulsoup4>=4.12
+lxml>=5.0
+streamlit>=1.30
+
+[extract]
+newspaper4k>=0.9
+
+[llm]
+llama-cpp-python>=0.2
+sentence-transformers>=2.2
