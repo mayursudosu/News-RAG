@@ -1,3 +1,39 @@
-*.gguf
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Packages and distributions
+build/
+dist/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Virtual Environments
+rag_env/
+venv/
+env/
+.env
+
+# Databases
 *.db
+*.sqlite
+*.sqlite3
+
+# Large LLM Models
+*.gguf
+models/*.gguf
+
+# Debug / Test scripts
+fix_test*.py
+test_fetch_isolation.py
+
+# OS / Editor
+.vscode/
+.DS_Store
+
+# Shell scripts (optional, keeping previous rule)
 *.sh
